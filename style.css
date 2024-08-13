@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body {
+    background-color: #191931;
+    color: #e1e1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    gap: 1rem;}
+.foto {
+    width: 10rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;}
+.sosmed {
+    margin-top: 1rem;}
+a {
+    text-decoration: none;
+    color: inherit;}
+.sosmed i {
+    font-size: 2.10rem;
+    color: #8787a3;}
+ul {
+    width: 80%;
+    max-width: 50rem;}
+ul li {
+    list-style: none;}
+ul li:not(:last-child) {
+    margin-bottom: 1rem;}
+.sosmed a:not(:last-child) {
+    margin-right: 2.25rem;}
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252931;
+    box-shadow: 6px 5px 0 black;
+    border-radius: 30rem;
+    padding: 0.70rem;
+    border: 1px solid #252931;}
+.link:hover {
+    border: 1px solid whitesmoke;}
+.link .icons {
+    background-image: linear-gradient(to top, purple, blue);
+    padding: 0.5rem;
+    border-radius: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.sosmed .icon i {
+    color: #8787a3;}
+.action {
+    color:#8787a3;
+    cursor: pointer;} 
+    
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;}
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #1d1d1d;}
+.colorBox:hover{
+    background: purple;
+    transition-duration: 0s;}
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: purple;
+    filter: blur(60px);
+    animation: animBack 8s linear infinite; }
+
+
+@keyframes animBack {
+    0%{
+        top: -60px;}
+    100%{
+        top: 120%; }}
+    
